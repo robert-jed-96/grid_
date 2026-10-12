@@ -1,0 +1,98 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    width: 1400px;
+    height: 754px;
+}
+
+/* Main Container Setup */
+main {
+    width: 1400px;
+    height: 754px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    place-content: center;
+    gap: 1em;
+    grid-template-areas: 
+    "box-1 box-1 box-2 box-2 box-3 box-3"
+    "box-1 box-1 box-2 box-2 box-3 box-3"
+    "box-1 box-1 box-2 box-2 box-4 box-4"
+    "box-5 box-5 box-2 box-2 box-4 box-4"
+    "box-5 box-5 box-2 box-2 box-6 box-6"
+    "box-5 box-5 box-2 box-2 box-6 box-6"
+    "box-7 box-7 box-8 box-9 box-9 box-10"
+    "box-7 box-7 box-8 box-9 box-9 box-10"
+    "box-7 box-7 box-11 box-9 box-9 box-10"
+    "box-7 box-7 box-11 box-9 box-9 box-10";
+}
+
+.green1 {
+    background-color: #007F5F;
+}
+
+.green2 {
+    background-color: #80B918;
+}
+
+.yellow1 {
+    background-color: #DDDF00;
+}
+
+.yellow2 {
+    background-color: #BFD200;
+}
+
+.green3 {
+    background-color: #2B9348;
+}
+
+.yellow3 {
+    background-color: #FFFF3F;
+}
+
+.green4 {
+    background-color: #55A630;
+}
+
+.green5 {
+    background-color: #AACC00;
+}
+
+.yellow-green {
+    background-color: #D4D700;
+}
+
+.green6 {
+    background-color: #BFD200;
+}
+
+/* Bottom Label Setup  */
+footer {
+    width: 1440px;
+    height: 146px;
+    background-color: #9BC1BC;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    position: absolute;
+    margin-top: 930px;
+    justify-content: flex-end;
+    line-height: 1.2;          /* Prevents uneven vertical clipping */
+}
+
+h1 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 64px;
+    margin-top: 34px;
+    margin-left: 24px;
+}
+
